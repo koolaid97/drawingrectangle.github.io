@@ -8,7 +8,8 @@ int titleB, titleC, titleD, titleE;
 String titles = "koolaid";
 PFont titleFonts;
 color purple = #9B0FD3;
-
+PImage pic;
+int  imageStartWidth, imageStartHeight, imageWidth, imageHeight;
 
 
 //Display Geometry
@@ -22,6 +23,8 @@ String[] fontList = PFont.list(); //To list all fonts available on system
 printArray(fontList); //For listing all possible fonts to choose, then createFont
 */
 titleFont = createFont ("Impact", 55); //Verify font exists
+//
+
 
 
 //populating variables
@@ -38,6 +41,7 @@ titleE = height*1/10;
 // Laying out our text space and typographical Features
 rect(titleX, titletY, titleWidth, titleHeight);
 rect(titleB, titleC, titleD, titleE);
+
 //Drawing Text
 textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
 //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
